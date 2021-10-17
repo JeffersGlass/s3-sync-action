@@ -5,6 +5,10 @@ inputs:
   args:
     description: 'Additional arguments for s3 sync'
     required: false
+outputs:
+  stringtag:
+    description: 'A static string to confirm this action was run'
+    value: 'The sync action completed running'
 runs:
   using: docker
   image: Dockerfile
